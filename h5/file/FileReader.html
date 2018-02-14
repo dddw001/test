@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script>
+    window.onload=function(){
+      var oBtn=document.getElementById('import');
+      var oFile=document.getElementById('files');
+      oBtn.onclick=function(){
+        oFile.click();
+      }
+      oFile.onchange=function(){
+        var sFile=oFile.files[0];
+        var name=sFile.name;
+        var size=sFile.size;
+        console.log(name,size);
+
+        var reader=new FileReader();
+        reader.readAsText(sFile);
+
+        reader.onload=function(){
+          console.log(this.result);
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+  <div>
+    <input type="file" id="files" />
+    <input type="button" id="import" value="导入">
+  </div>
+</body>
+</html>

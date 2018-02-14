@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script>
+    window.onload=function(){
+      //1.找到canvas元素
+      var oCanvas=document.getElementById('canvas1');
+      //2.创建context对象
+      var ctx=oCanvas.getContext("2d");
+      //3.绘制
+      ctx.moveTo(0,0);//开始坐标
+      ctx.lineTo(200,100);//结束坐标
+      ctx.stroke();
+    }
+  </script>
+</head>
+<body>
+  <canvas id="canvas1" style="width:200px;height:200px;"></canvas>
+</body>
+</html>

@@ -1,0 +1,23 @@
+﻿html css bootstrap
+html5 css3
+js jq ajax
+vue/react/argular
+移动端zepto 
+
+dom元素 dom事件 事件捕获与事件冒泡 事件中断 作用域链 执行机制 
+面向对象 原型链 闭包 
+
+数组 字符串 对象 事件 原型链
+
+你不知道的js系列
+js忍者秘籍
+红皮书 犀牛书
+js语言精粹
+编写可维护的js
+js设计模式-张容铭
+html和css进阶
+
+一、html css js jq
+二、h5 c3 移动端 响应式 bootstrap less scss
+三、h5 js jq ajax svg canvas
+四、与后台交互 框架

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+	var xmlhttp;
+  function loadXMLDoc(url,fn){
+    if(window.XMLHttpRequest){
+      xmlhttp=new XMLHttpRequest();
+    }
+    else{
+      xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    xmlhttp.onreadystatechange=fn;
+    xmlhttp.open("GET",url,true);
+    xmlhttp.send();
+  }
+	function load(){
+		loadXMLDoc("1.txt",function(){
+      if(xmlhttp.readyState==4&&xmlhttp.status==200){
+        document.getElementById('div1').innerHTML=xmlhttp.responseText;
+      }
+    })
+	}
+	</script>
+</head>
+<body>
+	<div id="div1">使用Ajax修改内容</div>
+	<button onclick="load()">修改内容</button>
+</body>
+</html>

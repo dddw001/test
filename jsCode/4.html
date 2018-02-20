@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script>
+   //驼峰命名转下划线
+   var str='aBcccDe';
+
+   function fn(str){
+     console.log(str.match(/^[a-z0-9]+|[A-Z][a-z0-9]*/g));
+     return str.match(/^[a-z0-9]+|[A-Z][a-z0-9]*/g).join('_').toLowerCase();
+   }
+
+   console.log(fn(str));
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

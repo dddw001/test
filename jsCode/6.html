@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script>
+   //获取url参数
+
+   function fn(key){
+    var reg = new RegExp("(^|&)"+ key +"=([^&]*)(&|$)");
+    var r = window.location.search.substr(1).match(reg);
+    if(r!=null){
+      return unescape(r[2]);
+    }
+    return null;
+   }
+
+   console.log(window.location);
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

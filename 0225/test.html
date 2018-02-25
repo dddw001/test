@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script>
+    function callWithContext(fn,context){
+      return fn.call(context);//指定了context是fn的上下文
+    }
+    const apple={name:"Apple"};
+    const orange={name:"Orange"};
+    function echo(){
+      console.log(this.name);
+    }
+    callWithContext(echo,apple);//Apple
+    callWithContext(echo,orange);//Orange
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

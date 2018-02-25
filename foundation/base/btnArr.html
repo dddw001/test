@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/foundation/5.5.3/css/foundation.min.css">
+  <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/foundation/5.5.3/js/foundation.min.js"></script>
+  <script src="https://cdn.bootcss.com/foundation/5.5.3/js/vendor/modernizr.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <ul class="button-group">
+    <li><button type="button" class="button">Apple</button></li>
+    <li><button type="button" class="button">Samsung</button></li>
+    <li><button type="button" class="button">Sony</button></li>
+  </ul>
+  <ul class="button-group even-5">
+  <li><button type="button" class="button">Apple</button></li>
+  <li><button type="button" class="button">Samsung</button></li>
+  <li><button type="button" class="button">Sony</button></li>
+  <li><button type="button" class="button">HTC</button></li>
+  <li><button type="button" class="button">Huawei</button></li>
+</ul>
+
+<a href="#" data-dropdown="id01" class="button dropdown">Dropdown Button</a>
+  <ul id="id01" data-dropdown-content class="f-dropdown">
+    <li><a href="#">Link 1</a></li>
+    <li><a href="#">Link 2</a></li>
+    <li><a href="#">Link 3</a></li>
+  </ul>
+
+  <button class="button split">Split Button <span data-dropdown="id01"></span></button>
+  <ul id="id01" data-dropdown-content class="f-dropdown">
+    <li><a href="http://www.baidu.com">Link 1</a></li>
+    <li><a href="#">Link 2</a></li>
+    <li><a href="#">Link 3</a></li>
+  </ul>
+  <script>
+$(document).ready(function() {
+    $(document).foundation();
+})
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script>
+    function test(obj){
+      // var num=num+1;
+      // return num;
+      obj.age='20';
+      console.log('内部',obj);
+    }
+    // var num=1;
+    // alert(test(num));//2
+    // alert(num);//1
+
+    var obj={
+      name:'aaa'
+    }
+    test(obj);
+    console.log('外部',obj);
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

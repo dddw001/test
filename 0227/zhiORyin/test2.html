@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script>
+    function fn(){
+      if(false){
+        var i=10;
+      }
+      console.log(i);//undefined 已声明但未赋值
+      console.log(j);//报错  Uncaught ReferenceError: j is not defined
+    }
+    fn();
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
